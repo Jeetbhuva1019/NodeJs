@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>MVC</h1>
+
+    <form action="addData" method="post">
+        <input type="text" name="name" placeholder="Enter your name">
+        <input type="text" name="city" placeholder="Enter your city">
+        <input type="number" name="number" placeholder="Enter Number">
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>City</th>
+                <th>Number</th>
+                <th colspan="2">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <%data.map((e,i)=>{%>
+                <tr>
+                    <td>
+                        <%=e.id%>
+                    </td>
+                    <td>
+                        <%=e.name%>
+                    </td>
+                    <td>
+                        <%=e.city%>
+                    </td>
+                    <td>
+                        <%=e.number%>
+                    </td>
+                    <td>
+                        <button><a href="/editData?id=<%=e.id%>">Edit</a></button>
+                        <button><a href="/deleteData?id=<%=e.id%>">Delete</a></button>
+                    </td>
+                </tr>
+                <%})%>
+        </tbody>
+    </table>
+
+
+</body>
+
+</html>

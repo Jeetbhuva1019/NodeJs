@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+    }
+
+    h1 {
+        text-align: center;
+        background-color: #4CAF50;
+        color: white;
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: #333;
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #4CAF50;
+    }
+
+    form {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    form input,
+    form button {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    form button {
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+        border: none;
+        transition: background-color 0.3s;
+    }
+
+    form button:hover {
+        background-color: #45a049;
+    }
+
+    table {
+        width: 90%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        background: white;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    table thead {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    table th,
+    table td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    table tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    table button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 5px 10px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s;
+    }
+
+    table button:hover {
+        background-color: #45a049;
+    }
+
+    table a {
+        text-decoration: none;
+        color: white;
+    }
+</style>
+
+<body>
+
+    <nav>
+        <a href="">Games</a>
+        <a href="">Books</a>
+        <a href="">Clothes</a>
+        <a href="">Gadgets</a>
+        <a href="">Toys</a>
+    </nav>
+
+    <h1>Welcome to Book Store</h1>
+
+    <form action="/updateData" method="post">
+        <input type="text" hidden name="id" value="<%=singleData.id%>">
+        <input type="text" name="name" placeholder="Enter Book Name" value="<%=singleData.name%>">
+        <input type="text" name="auther" placeholder="Enter Book Auther Name" value="<%=singleData.auther%>">
+        <input type="date" name="date" placeholder="Enter Book RealeseDate" value="<%=singleData.date%>">
+        <input type="number" name="price" placeholder="Enter Book Price" value="<%=singleData.price%>">
+        <button type="submit">Update Data</button>
+    </form>
+</body>
+
+</html>

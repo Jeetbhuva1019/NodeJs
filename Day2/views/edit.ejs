@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome</h1>
+    <form action="/updateData" method="post">
+        <input type="text" hidden name="id" value="<%=singleData.id%>">
+        <input type="text" placeholder="Enter Name" name="name" value="<%=singleData.name%>">
+        <input type="text" placeholder="Enter City" name="city" value="<%=singleData.city%>">
+        <button type="submit">Update data</button>
+    </form>
+</body>
+
+</html>

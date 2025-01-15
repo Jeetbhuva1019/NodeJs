@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyShow</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- nav// -->
+
+    <nav class="mnav">
+        <div class="nav1">
+            <div class="bgimg"></div>
+            <div class="nav2">
+                <input class="search" type="search"
+                    placeholder="search for movies, Events, Plays, Sports and Activities">
+            </div>
+            <div class="nav3">
+                <a class="city" href="">Rajkot <i style="font-size: 10px;" class="fa-solid fa-chevron-down"></i></a>
+                <a class="addmovie" href="/addPage">Add Movie</a>
+                <a href=""><i class="fa-solid fa-bars"></i></a>
+            </div>
+        </div>
+    </nav>
+    <nav class="mnav2">
+        <div class="n2">
+            <div class="n21">
+                <a href="">Movies</a>
+                <a href="">stream</a>
+                <a href="">Events</a>
+                <a href="">Plays</a>
+                <a href="">Sports</a>
+                <a href="">Activities</a>
+            </div>
+            <div class="n22"></div>
+            <div class="n23">
+                <a href="">ListYourShow</a>
+                <a href="">Corporates</a>
+                <a href="">offers</a>
+                <a href="">Gift Cards</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- poster -->
+
+    <div class="page1">
+        <div class="p1bgimg"></div>
+    </div>
+
+    <!-- movies -->
+
+    <div class="page2">
+        <div class="p21">
+            <p class="Recommended">Recommended Movies</p>
+            <div class="movies">
+                <div class="m1">
+                    <div class="m1img"></div>
+                    <p class="mname">Pushpa 2: The Rule</p>
+                    <p class="mtype">Action/Thriller</p>
+                </div>
+                <div class="m1">
+                    <div class="m2img"></div>
+                    <p class="mname">Victor 303</p>
+                    <p class="mtype">Action/Drama</p>
+                </div>
+                <div class="m1">
+                    <div class="m3img"></div>
+                    <p class="mname">Kaashi Raaghav</p>
+                    <p class="mtype">Drama</p>
+                </div>
+                <div class="m1">
+                    <div class="m4img"></div>
+                    <p class="mname">Marco</p>
+                    <p class="mtype">Action/Thriller</p>
+                </div>
+                <div class="m1">
+                    <div class="m5img"></div>
+                    <p class="mname">Mufasa: The Line King</p>
+                    <p class="mtype">Adventure/Animation/Drama</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- events -->
+
+    <p class="ymovies">Your Movies</p>
+    <div class="page3">
+        <div class="p31">
+            <%data.map((e)=>{%>
+                <div class="p311">
+                    <div class="imgst">
+                        <img class="img" src="<%=e.image%>" alt="image" />
+                    </div>
+                    <h1 class="mname">
+                        <%=e.name%>
+                    </h1>
+                    <p class="mtype">
+                        <%=e.type%>
+                    </p>
+                        <a href="/edit?id=<%=e.id%>">
+                            <button class="edit">Edit</button>
+                        </a>
+                        <a href="/delete?id=<%=e.id%>">
+                            <button class="delete">Delete</button>
+                        </a>
+                </div>
+                <%})%>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+
+.mnav {
+    /* border: 1px solid; */
+    width: 100%;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+}
+
+.nav1 {
+    /* border: 1px solid; */
+    width: 80%;
+    display: flex;
+}
+
+.bgimg {
+    /* border: 1px solid red; */
+    width: 13%;
+    height: 60px;
+    /* background-color: black; */
+    background-image: url("https://brandlogos.net/wp-content/uploads/2022/10/bookmyshow-logo_brandlogos.net_rzqea.png");
+    background-size: 130px;
+    background-position: 0px;
+    background-repeat: no-repeat;
+}
+
+.nav2 {
+    /* border: 1px solid; */
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    padding: 7px;
+    padding-right: 50%;
+    border: 1px solid rgb(213, 213, 213);
+    border-radius: 2px;
+}
+
+.search::placeholder {
+    /* border: 1px solid; */
+    padding-right: 450px;
+    font-size: 14px;
+    color: rgb(159, 159, 159);
+}
+
+.nav3 {
+    /* border: 1px solid red; */
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.city {
+    font-size: 14px;
+    margin-left: 30%;
+}
+
+.addmovie {
+    /* border: 1px solid; */
+    background-color: #ff435c;
+    color: white;
+    font-size: 13px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-left: 24px;
+    scale: 1;
+    transition: .2s;
+}
+
+.addmovie:hover {
+    scale: 1.1;
+}
+
+a .fa-bars {
+    margin-left: 30px;
+    color: rgb(122, 122, 122);
+}
+
+.mnav2 {
+    /* border: 1px solid; */
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.n2 {
+    /* border: 1px solid red; */
+    width: 80%;
+    display: flex;
+}
+
+.n21 {
+    /* border: 1px solid; */
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.n21 a {
+    color: rgb(38, 38, 38);
+}
+
+.n22 {
+    /* border: 1px solid; */
+    width: 46%;
+}
+
+.n23 {
+    /* border: 1px solid; */
+    width: 24%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.page1 {
+    /* border: 1px solid; */
+    width: 100%;
+    height: 320px;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p1bgimg {
+    width: 80%;
+    height: 94%;
+    background-image: url(https://assets-in.bmscdn.com/promotions/cms/creatives/1735900885384_venomwebweek1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.page2 {
+    /* border: 1px solid; */
+    width: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+}
+
+.p21 {
+    /* border: 1px solid red; */
+    width: 80%;
+}
+
+.Recommended {
+    font-size: 22px;
+    font-weight: 600;
+    color: #4b3333;
+    margin-top: 30px;
+}
+
+.movies {
+    /* border: 1px solid; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    padding-bottom: 60px;
+}
+
+.m1 {
+    /* border: 1px solid red; */
+    width: 18%;
+}
+
+.m1img {
+    width: 100%;
+    height: 360px;
+    /* border: 1px solid; */
+    background-image: url(https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC40LzEwICA0MjAuN0sgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00356724-gsglcmjwxd-portrait.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.mname {
+    font-weight: 600;
+    font-size: 18px;
+    color: #131313;
+    padding: 12px 0px;
+}
+
+.mtype {
+    font-size: 15px;
+    color: #464646;
+    padding: 0px 0px;
+}
+
+.m2img {
+    width: 100%;
+    height: 360px;
+    /* border: 1px solid; */
+    background-image: url(https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS41LzEwICBFYXJseSBSYXRpbmdz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00419713-paygjlfgag-portrait.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.m3img {
+    width: 100%;
+    height: 360px;
+    /* border: 1px solid; */
+    background-image: url(https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ny4yLzEwICBFYXJseSBSYXRpbmdz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00423687-vzjfnmqblz-portrait.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.m4img {
+    width: 100%;
+    height: 360px;
+    /* border: 1px solid; */
+    background-image: url(https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC43LzEwICA3OC44SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00416394-jmmlluuywc-portrait.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.m5img {
+    width: 100%;
+    height: 360px;
+    /* border: 1px solid; */
+    background-image: url(https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC40LzEwICA1MS4xSyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00396541-mkkhjutrhn-portrait.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.ymovies {
+    font-size: 22px;
+    font-weight: 600;
+    color: #4b3333;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+.page3 {
+    /* border: 1px solid; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #f5f5f5;
+}
+
+.p31 {
+    /* border: 1px solid red; */
+    width: 83%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.p311 {
+    /* border: 1px solid; */
+    height: 480px;
+    width: 18%;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+.imgst {
+    /* border: 1px solid; */
+    width: 100%;
+    height: 380px;
+}
+
+.img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.edit {
+    background-color: #ff435c;
+    color: white;
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 60px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.delete {
+    background-color: #ff435c;
+    color: white;
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 4px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: none;
+}
+
+.mname {
+    margin-left: 10px;
+}
+
+.mtype {
+    margin-left: 10px;
+}
+
+button {
+    scale: 1;
+    transition: .2s;
+}
+
+button:hover {
+    scale: 1.1;
+}
