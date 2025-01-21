@@ -29,30 +29,27 @@
             <thead class="table-light">
               <!-- fdgfh... -->
               <tr>
-                <th>Image</th>
                 <th>Full name</th>
                 <th>Email</th>
-                <th>Phone</th>
                 <th>Password</th>
                 <th>Gender</th>
+                <th>Hobby</th>
+                <th>Image</th>
                 <th colspan="2">Action</th>
               </tr>
 
             </thead>
             <tbody>
-              <% data.map((e)=>{%>
-                <tr>
+              <% data.map((e)=> { %>
+                <tr class="<%= e._id.toString() === adminData._id.toString() ? 'table-success' : '' %>">
                   <td>
-                    <img src="<%= e.image%>" style="height: 50px; width: 50px;" alt="">
-                  </td>
-                  <td>
-                    <%= e.name%>
+                    <%= e.name %>
+                      <% if (e._id.toString()===adminData._id.toString()){%>
+                        <span style="color: green;">(You)</span>
+                        <%}%>
                   </td>
                   <td>
                     <%= e.email%>
-                  </td>
-                  <td>
-                    <%= e.phone%>
                   </td>
                   <td>
                     <%= e.password%>
@@ -60,6 +57,10 @@
                   <td>
                     <%= e.gender%>
                   </td>
+                  <td>
+                    <%= e.hobby%>
+                  </td>
+                  <td><img src="<%= e.image%>" style="height: 50px; width: 50px; border-radius: 100%;" alt=""></td>
                   <td>
                     <a href="editAdmin?id=<%= e._id%>"><button type="button" class="btn btn-primary">Update</button></a>
                     <a href="deleteAdmin?id=<%= e._id%>"><button type="button"
